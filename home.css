@@ -1,0 +1,239 @@
+/* Asterisk is needed to select all elements. The default styles of the browser are changed. */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'roboto', sans-serif; 
+   
+}
+
+/* Applying navbar styles */
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsl(0, 43%, 88%);
+    z-index: 9;
+}
+
+.nav{
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+     height: 60px;
+     font-size: 25px;
+     text-decoration:none;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-style:italic;
+     color:rgb(7, 3, 43);
+
+}
+
+.nav-items{
+    display: flex;
+    align-items:center;
+}
+
+.search{
+    width: 500pt;
+    display: flex;
+}
+
+.search-box::placeholder{
+    color:rgb(134, 123, 112);
+}
+
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+}
+
+.link{
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: wavy;
+    color:rgb(36, 12, 12);
+    
+}
+
+.cart{
+    position: relative;
+}
+
+.link1{
+    text-decoration: wavy;
+    color:rgb(36, 12, 12);
+    
+}
+
+.cartAmount{
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+
+.product-header{
+    padding: 20px 40px ;
+    font-size: 20px;
+}
+
+
+.item{
+    box-shadow: 0 4px 8px 0 rgba(108, 93, 93, 0.747);
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: arial;
+}
+  
+.price {
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+}
+  
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+
+
+.minus{
+    color: red;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    width:10%;
+    background-color: white;
+ 
+}
+
+.remove-sign{
+    color: red;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    width:10%;
+    background-color: white;
+    padding: 10px;
+    
+    
+}
+.plus{
+    color: green;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    width:10%;
+    background-color: white;
+}
+
+/*Creating a four column layout*/
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+
+/*Creating style for a label*/
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+.checkout {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+  font-size: larger;
+}
+
+
+/*Creating style for a shopping-cart*/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/*Creating style for cart-item*/
+
+.cart-item {
+  border: 2px solid #69737e;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.cart-item-price {
+  background-color: #6c7177;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.buttonsForCart{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 18px;
+    justify-content: left;
+}
